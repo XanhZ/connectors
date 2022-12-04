@@ -1,0 +1,40 @@
+{
+	"name": "@xanhz/connectors",
+	"version": "2.0.0",
+	"description": "Simple Factory to create connectors to Mongoose, Redis, RabbitMQ",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rm -rf dist && npm run lint && tsc",
+		"lint": "eslint .",
+		"lint:fix": "npm run lint -- --fix"
+	},
+	"keywords": [],
+	"author": "Zincat0107@gmail.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/XanhZ/connectors"
+	},
+	"bugs": {
+		"url": "https://github.com/XanhZ/connectors/issues"
+	},
+	"homepage": "https://github.com/XanhZ/connectors#readme",
+	"license": "ISC",
+	"dependencies": {
+		"amqplib": "0.10.3",
+		"ioredis": "5.2.4",
+		"mongoose": "6.7.5",
+		"redlock": "5.0.0-beta.2"
+	},
+	"devDependencies": {
+		"@types/amqplib": "0.10.0",
+		"@types/node": "18.8.3",
+		"@typescript-eslint/eslint-plugin": "5.45.0",
+		"@typescript-eslint/parser": "5.45.0",
+		"eslint": "8.29.0",
+		"ts-node": "10.9.1"
+	}
+}
